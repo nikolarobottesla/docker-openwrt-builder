@@ -7,7 +7,7 @@ RUN apt-get update &&\
     echo 'user ALL=NOPASSWD: ALL' > /etc/sudoers.d/user
 
 USER user
-WORKDIR /home/user
+WORKDIR /home/user/openwrt
 
 # set dummy git config
-RUN git config --global user.name "user" && git config --global user.email "user@example.com"
+RUN git config --global user.name "nikolarobottesla" && git config --global user.email "nikolarobottesla@github.com"
